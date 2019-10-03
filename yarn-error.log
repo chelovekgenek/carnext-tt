@@ -1,5 +1,5 @@
 Arguments: 
-  /home/dufa/.nvm/versions/node/v10.15.3/bin/node /home/dufa/.nvm/versions/node/v10.15.3/bin/yarn add --dev @typeof/yup
+  /home/dufa/.nvm/versions/node/v10.15.3/bin/node /home/dufa/.nvm/versions/node/v10.15.3/bin/yarn add --dev enzyme enzyme-adapter-react-16 @types/enzyme @types enzyme-adapter-react-16
 
 PATH: 
   /home/dufa/.nvm/versions/node/v10.15.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Docker/Docker/Resources/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NGX:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/dufa/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/dufa/scoop/shims:/mnt/c/Users/dufa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dufa/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dufa/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/dufa/AppData/Local/Microsoft/WindowsApps:/snap/bin
@@ -14,8 +14,8 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@typeof%2fyup: Not found
-      at Request.params.callback [as _callback] (/home/dufa/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:66830:18)
+  Error: https://registry.yarnpkg.com/@types: Request "https://registry.yarnpkg.com/@types" returned a 405
+      at Request.params.callback [as _callback] (/home/dufa/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:66839:18)
       at Request.self.callback (/home/dufa/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:140464:22)
       at Request.emit (events.js:189:13)
       at Request.<anonymous> (/home/dufa/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:141436:10)
@@ -47,6 +47,7 @@ npm manifest:
       "@types/react-dom": "^16.0.11",
       "@types/react-router-dom": "^5.1.0",
       "@types/styled-components": "^4.1.19",
+      "@types/yup": "^0.26.24",
       "husky": "^3.0.8",
       "lint-staged": "^9.4.1",
       "prettier": "^1.18.2",
@@ -1527,6 +1528,11 @@ Lockfile:
     integrity sha512-K8/LfZq2duW33XW/tFwEAfnZlqIfVsoyRB3kfXdPXYhl0nfM8mmh7GS0jg7WrX2Dgq/0Ha/pR1PaR+BvmWwjiQ==
     dependencies:
       "@types/yargs-parser" "*"
+  
+  "@types/yup@^0.26.24":
+    version "0.26.24"
+    resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.24.tgz#c24170b3a5c867b4fabd49fcc42fe45f780cb153"
+    integrity sha512-x0bhHnYjH5mZit4HivUYbTMO4LouOTGwp/LLxSL1mbJYVwNJtHYESH0ed2bwM1lkI2yDmsoCDYJnWEgHeJDACg==
   
   "@typescript-eslint/eslint-plugin@^2.2.0":
     version "2.3.2"

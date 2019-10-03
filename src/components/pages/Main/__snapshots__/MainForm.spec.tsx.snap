@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main.MainForm should render 1`] = `
+<Form>
+  <styled.div>
+    <styled.div
+      padding={1}
+    >
+      <Input
+        label="First name"
+        name="firstname"
+      />
+    </styled.div>
+    <styled.div
+      padding={1}
+    >
+      <Input
+        label="Surname"
+        name="surname"
+      />
+    </styled.div>
+  </styled.div>
+  <Input
+    label="Email address"
+    name="email"
+  />
+  <Input
+    label="Phone number"
+    name="phone"
+  />
+  <Input
+    label="Voucher code"
+    name="code"
+  />
+  <Checkbox
+    label="Accept Privacy Settlement"
+    name="agreement"
+  />
+  <Button
+    disabled={true}
+    onClick={[MockFunction]}
+    type="submit"
+  >
+    Get offer
+    <i
+      className="fas fa-chevron-right"
+    />
+  </Button>
+</Form>
+`;

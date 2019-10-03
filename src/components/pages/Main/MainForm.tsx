@@ -1,4 +1,5 @@
 import React from "react"
+import { connect } from "react-redux"
 import { FormikProps, Form, withFormik } from "formik"
 
 import { Input, Checkbox } from "components/common/form"
@@ -6,8 +7,13 @@ import { Button } from "components/common/ui"
 
 import { initialValues, schema } from "./schema"
 import * as Styles from "./Main.styled"
+import { TAppState } from "store/entities"
+import { PromotionActions } from "store/entities/promotion"
 
-interface IProps {}
+interface IDispatchProps {
+  submit: typeof PromotionActions.request
+}
+interface IProps extends IDispatchProps {}
 
 export const MainForm: React.FC<IProps & FormikProps<typeof initialValues>> = ({ handleSubmit, isValid }) => (
   <Form>
@@ -30,8 +36,16 @@ export const MainForm: React.FC<IProps & FormikProps<typeof initialValues>> = ({
   </Form>
 )
 
-export default withFormik<IProps, typeof initialValues>({
-  handleSubmit: values => console.log(values),
-  validationSchema: schema,
-  validateOnBlur: true,
-})(MainForm)
+export default connect<{}, IDispatchProps, {}, TAppState>(
+  null,
+  {
+    submit: PromotionActions.request,
+  },
+)(
+  withFormik<IProps, typeof initialValues>({
+    handleSubmit: (values, { props }) => props.submit(values),
+    mapPropsToValues: () => initialValues,
+    validationSchema: schema,
+    validateOnBlur: true,
+  })(MainForm),
+)
