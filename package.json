@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "formik": "^1.5.8",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.0",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
@@ -16,6 +18,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-router-dom": "^5.1.0",
     "@types/styled-components": "^4.1.19",
+    "@types/yup": "^0.26.24",
     "husky": "^3.0.8",
     "lint-staged": "^9.4.1",
     "prettier": "^1.18.2",

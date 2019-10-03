@@ -7,6 +7,7 @@ export const Global = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    min-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
   }
 `

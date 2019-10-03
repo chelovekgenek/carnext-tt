@@ -18,7 +18,12 @@ export const Logo = styled.img`
   height: 9rem;
 `
 
-export const Content = styled.main`
+export const ContentWrapper = styled.main`
   height: calc(100% - ${headerHeight}rem);
+  display: flex;
   background-color: #f6f8fb;
+`
+export const Content = styled.div`
+  padding: 3rem 6rem;
+  width: 100%;
 `
