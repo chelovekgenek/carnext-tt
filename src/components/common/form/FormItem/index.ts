@@ -7,4 +7,5 @@ export const FormItem = styled.div`
 export const FormItemError = styled.div`
   color: red;
   height: 1rem;
+  display: table;
 `
