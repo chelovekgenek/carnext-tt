@@ -20,3 +20,17 @@ export const Input: React.FC<IProps> = ({ name, label }) => (
     )}
   </Field>
 )
+
+export const InnerFormItem: React.FC<IProps & FieldProps> = ({
+  label,
+  name,
+  field,
+  form: { touched, errors },
+  ...props
+}) => (
+  <Styles.Container>
+    <Styles.Label htmlFor={name}>{label}</Styles.Label>
+    <Styles.Input id={name} type="text" {...field} {...props} />
+    <FormItemError>{touched[field.name] && errors[field.name]}</FormItemError>
+  </Styles.Container>
+)

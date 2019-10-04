@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox should render 1`] = `
+<styled.div>
+  <styled.input
+    checked={false}
+    id="checkbox"
+    name="checkbox"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    type="checkbox"
+    value={false}
+  />
+  <styled.label
+    htmlFor="checkbox"
+  >
+    checkbox
+  </styled.label>
+  <styled.div />
+</styled.div>
+`;

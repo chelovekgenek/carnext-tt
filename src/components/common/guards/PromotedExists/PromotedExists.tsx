@@ -1,10 +1,19 @@
 import React from "react"
-import { useSelector } from "react-redux"
+import { connect } from "react-redux"
 import { Redirect } from "react-router"
 
 import { isPromoted } from "store/entities/promotion"
+import { TAppState } from "store/entities"
 
-export const PromotedExists: React.FC = ({ children }) => {
-  const promoted = useSelector(isPromoted)
+interface IStateProps {
+  promoted: ReturnType<typeof isPromoted>
+}
+interface IProps extends IStateProps {}
+
+export const PromotedExists: React.FC<IProps> = ({ children, promoted }) => {
   return promoted ? <React.Fragment>{children}</React.Fragment> : <Redirect to="/" />
 }
+
+export default connect<IStateProps, {}, {}, TAppState>(state => ({
+  promoted: isPromoted(state),
+}))(PromotedExists)

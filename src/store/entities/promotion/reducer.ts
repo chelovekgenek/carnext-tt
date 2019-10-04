@@ -6,7 +6,7 @@ export interface IState {
   promoted?: boolean
 }
 
-const initialState: IState = {
+export const initialState: IState = {
   fetching: false,
 }
 

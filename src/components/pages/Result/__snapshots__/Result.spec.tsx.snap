@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result should match snapshot if promoted is false 1`] = `
+<Layout>
+  <h1>
+    Better luck next time!
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</Layout>
+`;
+
+exports[`Result should match snapshot if promoted is true 1`] = `
+<Layout>
+  <h1>
+    Congratulations, you won!
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</Layout>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render 1`] = `
+<Styled(styled.div)>
+  <styled.label
+    htmlFor="input"
+  >
+    input
+  </styled.label>
+  <styled.input
+    id="input"
+    name="input"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    type="text"
+    value={false}
+  />
+  <styled.div />
+</Styled(styled.div)>
+`;

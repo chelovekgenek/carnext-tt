@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render 1`] = `
+<Fragment>
+  <styled.header>
+    <Link
+      to="/"
+    >
+      <styled.img
+        alt="logo"
+        src="https://www.carnext.com/static/images/carnext/logo-eu-header.png"
+      />
+    </Link>
+  </styled.header>
+  <styled.main>
+    <styled.div />
+  </styled.main>
+</Fragment>
+`;
+
+exports[`Layout should render child as ReactNode 1`] = `
+<Fragment>
+  <styled.header>
+    <Link
+      to="/"
+    >
+      <styled.img
+        alt="logo"
+        src="https://www.carnext.com/static/images/carnext/logo-eu-header.png"
+      />
+    </Link>
+  </styled.header>
+  <styled.main>
+    <styled.div>
+      <div>
+        asd
+      </div>
+    </styled.div>
+  </styled.main>
+</Fragment>
+`;
+
+exports[`Layout should render child as text 1`] = `
+<Fragment>
+  <styled.header>
+    <Link
+      to="/"
+    >
+      <styled.img
+        alt="logo"
+        src="https://www.carnext.com/static/images/carnext/logo-eu-header.png"
+      />
+    </Link>
+  </styled.header>
+  <styled.main>
+    <styled.div>
+      Hello there!
+    </styled.div>
+  </styled.main>
+</Fragment>
+`;

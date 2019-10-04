@@ -3,7 +3,7 @@ import { shallow } from "enzyme"
 
 import { Main } from "./Main"
 
-describe("Page.Main", () => {
+describe("Main", () => {
   it("should render correctly", () => {
     expect(shallow(<Main />)).toMatchSnapshot()
   })

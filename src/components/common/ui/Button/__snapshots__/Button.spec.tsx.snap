@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render 1`] = `<styled.button />`;
+
+exports[`Layout should render with children 1`] = `
+<styled.button>
+  text
+</styled.button>
+`;

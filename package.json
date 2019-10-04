@@ -40,6 +40,7 @@
     "lint-staged": "^9.4.1",
     "prettier": "^1.18.2",
     "raf": "^3.4.1",
+    "redux-saga-test-plan": "^4.0.0-rc.3",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.2.4"

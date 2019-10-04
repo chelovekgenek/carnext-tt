@@ -1,11 +1,11 @@
 import React from "react"
 import { shallow } from "enzyme"
 
-import formikMock from "mocks/formik-props"
+import formProps from "mocks/formik-form-props"
 
 import { MainForm } from "./MainForm"
 
-describe("Main.MainForm", () => {
+describe("MainForm", () => {
   const defaultValues = {
     firstname: "",
     surname: "",
@@ -15,7 +15,15 @@ describe("Main.MainForm", () => {
     agreement: true,
   }
   const render = (props = {}) =>
-    shallow(<MainForm {...formikMock} initialValues={defaultValues} values={defaultValues} {...props} />)
+    shallow(
+      <MainForm
+        {...formProps}
+        initialValues={defaultValues}
+        submit={jest.fn() as any}
+        values={defaultValues}
+        {...props}
+      />,
+    )
 
   it("should render", () => {
     expect(render()).toMatchSnapshot()

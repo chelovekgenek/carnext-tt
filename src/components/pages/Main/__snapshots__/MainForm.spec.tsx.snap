@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main.MainForm should render 1`] = `
+exports[`MainForm should render 1`] = `
 <Form>
   <styled.div>
     <styled.div

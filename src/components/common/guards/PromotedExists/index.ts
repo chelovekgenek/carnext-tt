@@ -1,1 +1,1 @@
-export { PromotedExists } from "./PromotedExists"
+export { default as PromotedExists } from "./PromotedExists"
