@@ -14,7 +14,7 @@ export const Input: React.FC<IProps> = ({ name, label }) => (
     {({ field, form: { touched, errors }, ...props }: FieldProps) => (
       <Styles.Container>
         <Styles.Label htmlFor={name}>{label}</Styles.Label>
-        <Styles.Input id={name} type="text" value={field.value || ""} {...field} {...props} />
+        <Styles.Input id={name} type="text" {...field} {...props} />
         <FormItemError>{touched[field.name] && errors[field.name]}</FormItemError>
       </Styles.Container>
     )}
